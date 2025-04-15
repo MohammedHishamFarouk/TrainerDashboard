@@ -6,9 +6,7 @@ A sleek and powerful dashboard for fitness trainers to manage clients, organize 
 
 ## 📸 Preview
 
-> 🎨 Designed in Figma – [View Design](https://www.figma.com/your-link)
-
-![Trainer Dashboard Preview](https://your-image-link)
+> 🎨 Designed in Figma – [View the Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
 
 ---
 
@@ -26,9 +24,9 @@ A sleek and powerful dashboard for fitness trainers to manage clients, organize 
 ## 🛠 Tech Stack
 
 - **Frontend:** Flutter
-- **Backend:** Firebase (or your choice here)
-- **Database:** Firestore (or your backend)
-- **UI/UX:** Figma
+- **Backend:** (e.g., Firebase or your choice)
+- **Database:** (e.g., Firestore or Supabase)
+- **UI/UX:** [Figma Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
 
 ---
 
@@ -38,6 +36,6 @@ A sleek and powerful dashboard for fitness trainers to manage clients, organize 
 lib/
 ├── models/           # Data models
 ├── screens/          # UI screens
-├── services/         # API/backend interactions
+├── services/         # Backend or Firebase functions
 ├── widgets/          # Reusable UI components
 └── main.dart         # App entry point
