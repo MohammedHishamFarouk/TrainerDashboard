@@ -27,13 +27,3 @@ A sleek and powerful dashboard for fitness trainers to manage clients, organize 
 - **UI/UX:** [Figma Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
 
 ---
-
-## 📁 Project Structure
-
-```bash
-lib/
-├── models/           # Data models
-├── screens/          # UI screens
-├── services/         # Backend or Firebase functions
-├── widgets/          # Reusable UI components
-└── main.dart         # App entry point
