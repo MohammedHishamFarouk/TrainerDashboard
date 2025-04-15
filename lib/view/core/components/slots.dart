@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainer_dashboard/view/core/components/slot_card.dart';
+import 'package:trainer_dashboard/view/core/constants/assets.dart';
 
 class Slots extends StatelessWidget {
   const Slots({super.key, required this.header});
@@ -18,9 +19,14 @@ class Slots extends StatelessWidget {
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return SlotCard();
+              return SlotCard(
+                icon: index % 2 == 0 ? Assets.dumbbellIcon : Assets.runningIcon,
+                traineeProfile:
+                    index % 2 == 0 ? Assets.profile1 : Assets.profile2,
+                date: header == "Upcoming" ? "26 April" : "",
+              );
             },
-            itemCount: 3,
+            itemCount: header == "Upcoming" ? 1 : 4,
           ),
         ),
       ],
