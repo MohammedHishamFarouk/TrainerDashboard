@@ -4,14 +4,16 @@ import 'package:trainer_dashboard/view/core/style/theme_manager.dart';
 import 'package:trainer_dashboard/view/dummy_screen.dart';
 import 'package:trainer_dashboard/view/navigation_bar_screen.dart';
 import 'package:trainer_dashboard/viewModel/navigation_bar_provider.dart';
+import 'package:trainer_dashboard/viewModel/theme_provider.dart';
 
 void main() {
   runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => NavigationBarProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
@@ -21,15 +23,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeManager.light,
+      theme: themeProvider.isDarkMode ? ThemeManager.dark : ThemeManager.light,
       initialRoute: '/NavScreen',
       routes: {
-        '/NavScreen': (context) => NavigationBarScreen(),
-        '/dummyScreen': (context) => DummyScreen(),
+        '/NavScreen': (context) => const NavigationBarScreen(),
+        '/dummyScreen': (context) => const DummyScreen(),
       },
-      home: NavigationBarScreen(),
+      home: const NavigationBarScreen(),
     );
   }
 }

@@ -28,7 +28,7 @@ class NavigationBarScreen extends StatelessWidget {
         height: 50,
         child: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, '/dummyScreen'),
-          child: Image(image: AssetImage(Assets.plusIcon)),
+          child: const Image(image: AssetImage(Assets.plusIcon)),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -39,19 +39,19 @@ class NavigationBarScreen extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () => navProvider.setIndex(0),
-              icon: Image(image: AssetImage(Assets.homeIcon)),
+              icon: const Image(image: AssetImage(Assets.homeIcon)),
             ),
             IconButton(
               onPressed: () => navProvider.setIndex(1),
-              icon: Image(image: AssetImage(Assets.calendarIcon)),
+              icon: const Image(image: AssetImage(Assets.calendarIcon)),
             ),
             IconButton(
               onPressed: () => navProvider.setIndex(2),
-              icon: Image(image: AssetImage(Assets.jobsIcon)),
+              icon: const Image(image: AssetImage(Assets.jobsIcon)),
             ),
             IconButton(
               onPressed: () => navProvider.setIndex(3),
-              icon: Image(image: AssetImage(Assets.settingsIcon)),
+              icon: const Image(image: AssetImage(Assets.settingsIcon)),
             ),
           ],
         ),

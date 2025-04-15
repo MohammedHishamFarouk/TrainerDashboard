@@ -14,7 +14,7 @@ class EarningsGraph extends StatelessWidget {
         child: Container(
           width: 361,
           height: 155,
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(14),
             border: Border.all(color: ColorManager.lightGrey),
@@ -23,7 +23,7 @@ class EarningsGraph extends StatelessWidget {
                 color: Colors.black.withValues(alpha: 0.3),
                 spreadRadius: 1,
                 blurRadius: 4,
-                offset: Offset(0, 4), // pushes shadow to bottom-right
+                offset: const Offset(0, 4), // pushes shadow to bottom-right
               ),
             ],
             color: Theme.of(context).primaryColor,
@@ -34,7 +34,10 @@ class EarningsGraph extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: Text(
                   'Total: ${roundHundredths(DummyValues.totalEarnings)}₹',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
                 ),
               ),
               Column(

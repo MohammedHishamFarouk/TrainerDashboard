@@ -3,6 +3,7 @@ abstract class Assets {
   static const String profile1 = 'assets/trial1.jpg';
   static const String profile2 = 'assets/trial2.jpg';
   static const String verifiedIcon = 'assets/icons/verified_icon.png';
+  static const String verifiedIconDark = 'assets/icons/dark_verified_icon.png';
   static const String bellIcon = 'assets/icons/bell_icon.png';
   static const String plusIcon = 'assets/icons/plus_icon.png';
   static const String homeIcon = 'assets/icons/home_icon.png';

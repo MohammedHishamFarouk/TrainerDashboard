@@ -7,7 +7,7 @@ class ThemeManager {
     primaryColor: Colors.white,
     secondaryHeaderColor: Colors.cyanAccent,
     fontFamily: 'InriaSans',
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,
     ),
@@ -17,9 +17,31 @@ class ThemeManager {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       hoverElevation: 0,
     ),
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: const BottomAppBarTheme(
       color: Colors.cyanAccent,
-      shape: const CircularNotchedRectangle(),
+      shape: CircularNotchedRectangle(),
+    ),
+  );
+
+  static final ThemeData dark = ThemeData(
+    brightness: Brightness.dark,
+    scaffoldBackgroundColor: Colors.black,
+    primaryColor: Colors.black,
+    secondaryHeaderColor: Colors.cyanAccent,
+    fontFamily: 'InriaSans',
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.black,
+      surfaceTintColor: Colors.black,
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.cyanAccent,
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      hoverElevation: 0,
+    ),
+    bottomAppBarTheme: const BottomAppBarTheme(
+      color: Colors.cyanAccent,
+      shape: CircularNotchedRectangle(),
     ),
   );
 }

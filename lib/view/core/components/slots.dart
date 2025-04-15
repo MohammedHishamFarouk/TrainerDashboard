@@ -13,7 +13,10 @@ class Slots extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 12,
       children: [
-        Text(header, style: TextStyle(fontFamily: 'InriaSans', fontSize: 16)),
+        Text(
+          header,
+          style: const TextStyle(fontFamily: 'InriaSans', fontSize: 16),
+        ),
         SizedBox(
           height: 162,
           child: ListView.builder(

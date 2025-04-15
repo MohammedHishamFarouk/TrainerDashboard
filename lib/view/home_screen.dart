@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:trainer_dashboard/view/core/components/earnings_graph.dart';
 import 'package:trainer_dashboard/view/core/components/slots.dart';
 import 'package:trainer_dashboard/view/core/constants/assets.dart';
+import 'package:trainer_dashboard/viewModel/theme_provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 80,
@@ -21,14 +24,20 @@ class HomeScreen extends StatelessWidget {
               Stack(
                 alignment: Alignment.bottomRight,
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: AssetImage(Assets.noProfilePic),
                     radius: 28,
                   ),
-                  Image(image: AssetImage(Assets.verifiedIcon)),
+                  Image(
+                    image: AssetImage(
+                      themeProvider.isDarkMode
+                          ? Assets.verifiedIconDark
+                          : Assets.verifiedIcon,
+                    ),
+                  ),
                 ],
               ),
-              Text(
+              const Text(
                 'Welcome,Aryush',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               ),
@@ -38,30 +47,27 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Image(image: AssetImage(Assets.bellIcon)),
+            icon: const Image(image: AssetImage(Assets.bellIcon)),
           ),
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
         ],
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 16,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
                 'Earnings',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
             EarningsGraph(),
+            Padding(padding: EdgeInsets.only(top: 16.0), child: Divider()),
             Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: Divider(),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16.0),
+              padding: EdgeInsets.only(left: 16.0),
               child: Column(
                 spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Slots(header: 'Today'),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
+                    padding: EdgeInsets.only(bottom: 30),
                     child: Slots(header: 'Upcoming'),
                   ),
                 ],

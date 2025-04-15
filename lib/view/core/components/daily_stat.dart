@@ -16,7 +16,10 @@ class DailyStat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(earnings == 0 ? '' : '$earnings₹', style: TextStyle(fontSize: 12)),
+        Text(
+          earnings == 0 ? '' : '$earnings₹',
+          style: const TextStyle(fontSize: 12),
+        ),
         Container(
           width: 8,
           height: height,
