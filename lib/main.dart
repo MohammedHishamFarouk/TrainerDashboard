@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:trainer_dashboard/view/core/style/theme_manager.dart';
+import 'package:trainer_dashboard/view/dummy_screen.dart';
 import 'package:trainer_dashboard/view/navigation_bar_screen.dart';
 import 'package:trainer_dashboard/viewModel/navigation_bar_provider.dart';
 
@@ -23,6 +24,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeManager.light,
+      initialRoute: '/NavScreen',
+      routes: {
+        '/NavScreen': (context) => NavigationBarScreen(),
+        '/dummyScreen': (context) => DummyScreen(),
+      },
       home: NavigationBarScreen(),
     );
   }
