@@ -1,16 +1,26 @@
-# trainer_dashboard
+# 🏋️‍♂️ Trainer Dashboard
 
-A new Flutter project.
+A sleek and powerful dashboard for fitness trainers to manage clients, organize workout plans, and track progress — all in one place.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Preview
 
-A few resources to get you started if this is your first Flutter project:
+> 🎨 Designed in Figma – [View the Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Features
+
+- 👤 **Client Management** – Add, edit, or remove clients easily.
+- 📅 **Workout Schedules** – Plan and assign weekly workouts.
+- 🌙 **Dark Mode** – Switch between light and dark themes.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Flutter
+- **UI/UX:** [Figma Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
+
+---
