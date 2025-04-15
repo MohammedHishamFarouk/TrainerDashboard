@@ -1,5 +1,5 @@
+import 'package:trainer_dashboard/constants/constants.dart';
 import 'package:trainer_dashboard/core/components/daily_stat.dart';
-import 'package:trainer_dashboard/core/constants.dart';
 
 double roundHundredths(double value) {
   return (value * 100).round() / 100;

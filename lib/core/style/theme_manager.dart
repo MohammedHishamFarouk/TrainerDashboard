@@ -8,5 +8,15 @@ class ThemeManager {
     secondaryHeaderColor: Colors.cyanAccent,
     fontFamily: 'InriaSans',
     appBarTheme: AppBarTheme(backgroundColor: Colors.white),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.cyanAccent,
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+      hoverElevation: 0,
+    ),
+    bottomAppBarTheme: BottomAppBarTheme(
+      color: Colors.cyanAccent,
+      shape: const CircularNotchedRectangle(),
+    ),
   );
 }

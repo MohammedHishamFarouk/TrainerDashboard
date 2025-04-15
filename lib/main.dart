@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trainer_dashboard/core/style/theme_manager.dart';
-import 'package:trainer_dashboard/home_screen.dart';
+import 'package:trainer_dashboard/navigation_bar_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeManager.light,
-      home: HomeScreen(),
+      home: NavigationBarScreen(),
     );
   }
 }

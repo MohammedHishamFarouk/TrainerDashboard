@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainer_dashboard/constants/assets.dart';
 import 'package:trainer_dashboard/core/components/slots.dart';
 
 import 'core/components/earnings_graph.dart';
@@ -11,15 +12,22 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 80,
+        leadingWidth: 250,
         leading: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             spacing: 16,
             children: [
-              CircleAvatar(
-                backgroundImage: AssetImage('assets/no_profile_pic.jpg'),
-                radius: 28,
+              Stack(
+                alignment: Alignment.bottomRight,
+                children: [
+                  CircleAvatar(
+                    backgroundImage: AssetImage(Assets.noProfilePic),
+                    radius: 28,
+                  ),
+                  Image(image: AssetImage(Assets.verifiedIcon)),
+                ],
               ),
               Text(
                 'Welcome,Aryush',
@@ -28,7 +36,13 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        leadingWidth: 250,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Image(image: AssetImage(Assets.bellIcon)),
+          ),
+          SizedBox(width: 16),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
