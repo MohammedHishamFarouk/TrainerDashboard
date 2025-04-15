@@ -1,4 +1,4 @@
-import 'helpers/functions.dart';
+import '../core/helpers/functions.dart';
 
 class Constants {
   static const List<String> days = [
