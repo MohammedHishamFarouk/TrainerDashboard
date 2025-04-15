@@ -30,35 +30,40 @@ class HomeScreen extends StatelessWidget {
         ),
         leadingWidth: 250,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 16,
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              'Earnings',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: 16,
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Text(
+                'Earnings',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
-          ),
-          EarningsGraph(),
-          Padding(padding: const EdgeInsets.only(top: 16.0), child: Divider()),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: Column(
-              spacing: 16,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Bookings',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Slots(header: 'Today'),
-                Slots(header: 'Upcoming'),
-              ],
+            EarningsGraph(),
+            Padding(
+              padding: const EdgeInsets.only(top: 16.0),
+              child: Divider(),
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0),
+              child: Column(
+                spacing: 16,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Bookings',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  Slots(header: 'Today'),
+                  Slots(header: 'Upcoming'),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

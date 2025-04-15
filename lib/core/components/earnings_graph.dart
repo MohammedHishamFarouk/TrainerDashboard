@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/core/functions.dart';
+import 'package:trainer_dashboard/core/helpers/functions.dart';
 import 'package:trainer_dashboard/core/style/color_manager.dart';
 
 class EarningsGraph extends StatelessWidget {
