@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/constants/assets.dart';
-import 'package:trainer_dashboard/core/components/slots.dart';
-
-import 'core/components/earnings_graph.dart';
+import 'package:trainer_dashboard/view/core/components/earnings_graph.dart';
+import 'package:trainer_dashboard/view/core/components/slots.dart';
+import 'package:trainer_dashboard/view/core/constants/assets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

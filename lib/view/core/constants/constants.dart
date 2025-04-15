@@ -1,4 +1,4 @@
-import '../core/helpers/functions.dart';
+import 'package:trainer_dashboard/view/core/helpers/functions.dart';
 
 class Constants {
   static const List<String> days = [

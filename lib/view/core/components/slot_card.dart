@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/core/style/color_manager.dart';
+import 'package:trainer_dashboard/view/core/style/color_manager.dart';
 
 class SlotCard extends StatelessWidget {
   const SlotCard({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/constants/constants.dart';
-import 'package:trainer_dashboard/core/helpers/functions.dart';
-import 'package:trainer_dashboard/core/style/color_manager.dart';
+import 'package:trainer_dashboard/view/core/constants/constants.dart';
+import 'package:trainer_dashboard/view/core/helpers/functions.dart';
+import 'package:trainer_dashboard/view/core/style/color_manager.dart';
 
 class EarningsGraph extends StatelessWidget {
   const EarningsGraph({super.key});
