@@ -24,8 +24,6 @@ A sleek and powerful dashboard for fitness trainers to manage clients, organize 
 ## 🛠 Tech Stack
 
 - **Frontend:** Flutter
-- **Backend:** (e.g., Firebase or your choice)
-- **Database:** (e.g., Firestore or Supabase)
 - **UI/UX:** [Figma Design](https://www.figma.com/design/K14dnIa4tC03U7smQDqjVj/trainer-dashboard?m=auto&t=KueezgKejr0V2B4Q-1)
 
 ---
