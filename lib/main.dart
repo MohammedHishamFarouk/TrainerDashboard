@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/core/style/theme_manager.dart';
-import 'package:trainer_dashboard/navigation_bar_screen.dart';
+import 'package:provider/provider.dart';
+import 'package:trainer_dashboard/view/core/style/theme_manager.dart';
+import 'package:trainer_dashboard/view/navigation_bar_screen.dart';
+import 'package:trainer_dashboard/viewModel/navigation_bar_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => NavigationBarProvider()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
