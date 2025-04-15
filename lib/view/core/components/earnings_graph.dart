@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/view/core/constants/constants.dart';
+import 'package:trainer_dashboard/dummy_values.dart';
 import 'package:trainer_dashboard/view/core/helpers/functions.dart';
 import 'package:trainer_dashboard/view/core/style/color_manager.dart';
 
@@ -33,7 +33,7 @@ class EarningsGraph extends StatelessWidget {
               Align(
                 alignment: Alignment.topRight,
                 child: Text(
-                  'Total: ${roundHundredths(Constants.totalEarnings)}₹',
+                  'Total: ${roundHundredths(DummyValues.totalEarnings)}₹',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
               ),

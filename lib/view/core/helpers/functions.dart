@@ -1,3 +1,4 @@
+import 'package:trainer_dashboard/dummy_values.dart';
 import 'package:trainer_dashboard/view/core/components/daily_stat.dart';
 import 'package:trainer_dashboard/view/core/constants/constants.dart';
 
@@ -6,18 +7,18 @@ double roundHundredths(double value) {
 }
 
 List<DailyStat> getDailyStats() => List.generate(7, (index) {
-  if (Constants.dummyEarnings.length < 7 &&
-      Constants.dummyEarnings.isNotEmpty) {
-    Constants.dummyEarnings.add(0);
+  if (DummyValues.dummyEarnings.length < 7 &&
+      DummyValues.dummyEarnings.isNotEmpty) {
+    DummyValues.dummyEarnings.add(0);
   }
   return DailyStat(
     day: Constants.days[index],
     height:
-        Constants.dummyEarnings.isEmpty
+        DummyValues.dummyEarnings.isEmpty
             ? 0
-            : 80 * (Constants.dummyEarnings[index] / Constants.maxEarnings),
+            : 80 * (DummyValues.dummyEarnings[index] / DummyValues.maxEarnings),
     earnings: roundHundredths(
-      Constants.dummyEarnings.isEmpty ? 0 : Constants.dummyEarnings[index],
+      DummyValues.dummyEarnings.isEmpty ? 0 : DummyValues.dummyEarnings[index],
     ),
   );
 });
