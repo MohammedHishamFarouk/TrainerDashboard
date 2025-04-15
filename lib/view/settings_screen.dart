@@ -15,7 +15,7 @@ class SettingsScreen extends StatelessWidget {
       ),
       body: Center(
         child: SwitchListTile(
-          title: const Text('Dark Mode'),
+          title: const Text('Toggle Theme'),
           value: themeProvider.isDarkMode,
           onChanged: (value) {
             themeProvider.toggleTheme();
