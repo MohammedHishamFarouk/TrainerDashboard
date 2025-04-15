@@ -7,7 +7,10 @@ class ThemeManager {
     primaryColor: Colors.white,
     secondaryHeaderColor: Colors.cyanAccent,
     fontFamily: 'InriaSans',
-    appBarTheme: AppBarTheme(backgroundColor: Colors.white),
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.white,
+      surfaceTintColor: Colors.white,
+    ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: Colors.cyanAccent,
       elevation: 0,

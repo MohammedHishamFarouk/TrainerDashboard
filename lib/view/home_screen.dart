@@ -71,7 +71,10 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Slots(header: 'Today'),
-                  Slots(header: 'Upcoming'),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: Slots(header: 'Upcoming'),
+                  ),
                 ],
               ),
             ),
