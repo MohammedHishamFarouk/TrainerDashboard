@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/components/slot_card.dart';
+import 'package:trainer_dashboard/core/components/slot_card.dart';
 
 class Slots extends StatelessWidget {
   const Slots({super.key, required this.header});

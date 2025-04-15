@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trainer_dashboard/color_manager.dart';
+import 'package:trainer_dashboard/core/style/color_manager.dart';
 
 class SlotCard extends StatelessWidget {
   const SlotCard({super.key});
@@ -8,11 +8,11 @@ class SlotCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 200,
-      margin: EdgeInsets.only(bottom: 12, right: 11, left: 2),
+      margin: EdgeInsets.only(bottom: 12, right: 11),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: ColorManager.grey),
-        color: Colors.white,
+        color: Theme.of(context).primaryColor,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.3),
@@ -23,6 +23,5 @@ class SlotCard extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

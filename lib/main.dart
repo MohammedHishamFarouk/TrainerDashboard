@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trainer_dashboard/core/style/theme_manager.dart';
 import 'package:trainer_dashboard/home_screen.dart';
 
 void main() {
@@ -10,6 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeManager.light,
+      home: HomeScreen(),
+    );
   }
 }
